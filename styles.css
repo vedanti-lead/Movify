@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Actor", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #d4d4d4;
+    /* Light Gray */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    /* Black */
+    border-radius: 2rem;
+    color: #fff;
+    /* White */
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #800000;
+    /* Dark Red */
+}
+
+.btn-1 {
+    width: 100%;
+    text-align: center;
+}
+
+body {
+    background-color: #1e1f26;
+    /* Dark Background */
+    display: grid;
+    grid-template-columns: 1000px;
+    justify-content: space-evenly;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+
+.left-content,
+.right-content {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    margin-right: 3rem;
+    color: #6b52ae;
+    /* Dark Purple */
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    margin-right: 1rem;
+}
+
+.navigation li a:hover {
+    color: #ffcc00;
+    /* Electric Yellow */
+}
+
+.active {
+    color: #800000;
+    /* Dark Red */
+}
+
+.filter,
+.cart,
+.help,
+.menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.filter,
+.cart,
+.help {
+    margin-right: 1rem;
+}
+
+.menu {
+    margin-left: .8rem;
+}
+
+.filter,
+.menu {
+    display: none;
+}
+
+.profile-img-box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filter,
+.cart,
+.help,
+.menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.main-container {
+    color: #adadad;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+}
+
+.sidebar {
+    background: linear-gradient(60deg, rgba(0, 0, 0, .5), rgba(205, 140, 56, .15));
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+}
+
+.sidebar-groups {
+    margin-bottom: 1rem;
+}
+
+.sg-title {
+    margin-bottom: 0.5rem;
+    color: #800000;
+    /* Dark Red */
+}
+
+input {
+    margin-bottom: 0.6rem;
+}
+
+input[type=checkbox]:checked {
+    accent-color: #6b52ae;
+    /* Dark Purple */
+}
+
+input[type=radio]:checked {
+    accent-color: #6b52ae;
+    /* Dark Purple */
+}
+
+label {
+    margin-left: 0.5rem;
+}
+
+.upcoming-img-box {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.upcoming-title {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #ffcc00;
+    /* Electric Yellow */
+    background-color: #1e1f26;
+    /* Dark Background */
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #ffcc00;
+    /* Electric Yellow */
+    font-weight: 500;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+
+.btn-alt {
+    background-color: #1e1f26;
+    /* Dark Background */
+    color: #ffcc00;
+    /* Electric Yellow */
+    border: 1px solid #ffcc00;
+    /* Electric Yellow */
+    margin-left: 1rem;
+}
+
+.btn-alt:hover {
+    color: #1e1f26;
+    /* Dark Background */
+    background-color: #ffcc00;
+    /* Electric Yellow */
+}
+
+.movies-container {
+    padding-bottom: 2rem;
+}
+
+.current-movies {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.cm-img-box {
+    position: relative;
+    height: 150px;
+    width: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.current-movie {
+    background: linear-gradient(60deg, rgba(0, 0, 0, .5), rgba(205, 140, 56, .15));
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.movie-title {
+    color: #fff;
+    /* White */
+    margin-bottom: 0.2rem;
+}
+
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.price {
+    color: #ffcc00;
+    /* Electric Yellow */
+}
+
